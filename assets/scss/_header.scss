@@ -1,0 +1,97 @@
+#header {
+  margin: 100px auto;
+  display: flex;
+  .header--menu {
+    margin-left: auto;
+    .header--menu--humberger {
+      display: none;
+    }
+    .header--menu--list {
+      display: flex;
+      .header--menu--list--item {
+        list-style: none;
+        margin: auto 15px;
+        .header--menu--list--item--link {
+          color: $dark;
+          font-family: $barlowCondensed;
+          font-size: 18px;
+          font-weight: bold;
+          text-decoration: none;
+          text-transform: uppercase;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .header--menu--list--item--separator {
+        border: none;
+        margin: auto 30px;
+        &:before {
+          content: '';
+          width: 5px;
+          height: 5px;
+          background: $grey;
+          border-radius: 25px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #header {
+    margin: 25px;
+    .header--logo {
+      img {
+        height: 25px;
+        width: auto;
+      }
+    }
+    .header--menu {
+      .header--menu--humberger {
+        &:before {
+          content: '';
+          display: block;
+          width: 26px;
+          height: 18px;
+          background-image: url("../images/icon-hamburger.svg");
+          background-repeat: no-repeat;
+          background-size: auto;
+          background-position: center center;
+        }
+        display: block;
+        text-align: right;
+        &:active {
+          &:before {
+            background-image: url("../images/icon-close.svg");
+          }
+        }
+      }
+      .header--menu--list {
+        background: $light;
+        box-shadow: 1px 1px 5px $dark;
+        display: none;
+        margin: 35px auto auto;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 85%;
+        &.active {
+          display: block;
+        }
+        .header--menu--list--item {
+          margin: 25px auto;
+        }
+        .header--menu--list--item--separator {
+          &:before {
+            height: 1px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

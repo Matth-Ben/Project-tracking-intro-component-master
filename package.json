@@ -1,0 +1,23 @@
+{
+  "name": "FrontendTraining",
+  "version": "1.0.0",
+  "description": "Projecttracking intro component",
+  "author": "Matthias Benoit <m.benoit0702@gmail.com>",
+  "private": true,
+  "scripts": {
+    "build-dev": "npx webpack-turnkey --eslint --sourcemaps --watch",
+    "build-prod": "NODE_ENV=prod npx webpack-turnkey --eslint --sourcemaps",
+    "build-style": "sass assets/scss/index.scss public/css/style.css"
+  },
+  "dependencies": {
+    "sass": "^1.27.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.0",
+    "node-sass": "^4.12.0",
+    "webpack": "^3.6.0"
+  },
+  "engines": {
+    "npm": ">= 3.0.0"
+  }
+}

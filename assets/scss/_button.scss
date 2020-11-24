@@ -1,0 +1,17 @@
+.btn {
+  align-items: center;
+  border-radius: 5px;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 600;
+  height: 45px;
+  justify-content: center;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  width: 175px;
+}
+
+.btn-primary {
+  background-color: $primary;
+  color: $light;
+}

@@ -1,0 +1,56 @@
+html {
+  font-family: $barlow;
+  max-width: 1440px;
+  margin: auto;
+  &:before {
+    content: '';
+    background-color: hsla(230, 11%, 40%, 90%);
+    width: 50%;
+    height: 60%;
+    border-bottom-left-radius: 60px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+body {
+  margin: auto;
+  max-width: 1080px;
+  overflow: hidden;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.content--flex {
+  display: flex;
+}
+
+.content--flex--one {
+  order: 1;
+}
+
+.content--flex--two {
+  order: 2;
+}
+
+@media screen and (max-width: 980px) {
+  html {
+    &:before {
+      height: 55%;
+    }
+  }
+  .content--flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content--flex--resp--one {
+    order: 1;
+  }
+  .content--flex--resp--two {
+    order: 2;
+  }
+}
