@@ -27,6 +27,11 @@ body {
 a {
   cursor: pointer;
   text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
 }
 
 .content--flex {
@@ -75,6 +80,12 @@ a {
 .btn-primary {
   background-color: #ff5c5c;
   color: #eef3f6;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background-color: rgba(255, 92, 92, 0.9);
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 #header {
@@ -202,13 +213,18 @@ a {
   margin: 70px auto auto;
 }
 #content .content--block .content--block--button--description {
+  margin-left: 16px;
+}
+#content .content--block .content--block--button--description a {
   color: #a0a1ac;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
-  margin-left: 16px;
   text-transform: uppercase;
+}
+#content .content--block .content--block--button--description a:hover {
+  text-decoration: underline;
 }
 
 .content--background--image:before {

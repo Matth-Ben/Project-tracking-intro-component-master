@@ -23,6 +23,11 @@ body {
 a {
   cursor: pointer;
   text-decoration: none;
+  transition: .3s;
+  &:hover {
+    text-decoration: underline;
+    transition: .3s;
+  }
 }
 
 .content--flex {
