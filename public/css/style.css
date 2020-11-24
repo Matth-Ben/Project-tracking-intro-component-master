@@ -152,7 +152,7 @@ a:hover {
     background-size: auto;
     background-position: center center;
   }
-  #header .header--menu .header--menu--humberger:active:before {
+  #header .header--menu .header--menu--humberger.active:before {
     background-image: url("../images/icon-close.svg");
   }
   #header .header--menu .header--menu--list {
