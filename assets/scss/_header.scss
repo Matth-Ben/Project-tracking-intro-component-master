@@ -62,7 +62,7 @@
         }
         display: block;
         text-align: right;
-        &:active {
+        &.active {
           &:before {
             background-image: url("../images/icon-close.svg");
           }
