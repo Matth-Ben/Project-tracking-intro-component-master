@@ -239,15 +239,14 @@ a:hover {
   width: 100%;
 }
 
-@media screen and (max-width: 1440px) {
-  .content--background--image:before {
-    max-width: 50%;
-  }
-}
 @media screen and (min-width: 768px) {
   .content--flex--one,
 .content--flex--two {
     width: 50%;
+  }
+
+  .content--background--image:before {
+    max-width: 50%;
   }
 }
 @media screen and (max-width: 768px) {
