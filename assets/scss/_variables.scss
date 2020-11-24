@@ -17,7 +17,7 @@ html {
 body {
   margin: auto;
   max-width: 1080px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 a {
@@ -52,6 +52,9 @@ a {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+@media screen and (max-width: 768px) {
   .content--flex--resp--one {
     order: 1;
   }

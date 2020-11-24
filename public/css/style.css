@@ -21,7 +21,7 @@ html:before {
 body {
   margin: auto;
   max-width: 1080px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 a {
@@ -55,7 +55,8 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
   }
-
+}
+@media screen and (max-width: 768px) {
   .content--flex--resp--one {
     order: 1;
   }
@@ -243,13 +244,33 @@ a:hover {
     max-width: 50%;
   }
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 768px) {
   .content--flex--one,
 .content--flex--two {
     width: 50%;
   }
 }
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 768px) {
+  .content--flex--one,
+.content--flex--two {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .content--flex--one,
+.content--flex--two {
+    margin: 15px auto;
+  }
+
+  .content--background--image:before {
+    background-position: center;
+    background-size: contain;
+    max-width: 100%;
+    position: initial;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
   .content--flex--one,
 .content--flex--two {
     margin: 35px auto;
@@ -263,7 +284,8 @@ a:hover {
     width: 425px;
     background-size: cover;
   }
-
+}
+@media screen and (max-width: 1079px) {
   #content .content--block {
     margin: auto;
     max-width: 85%;
